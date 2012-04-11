@@ -45,9 +45,6 @@ page = agent.submit form
 # Follow the redirect.
 page = page.link_with(:text => "Click here if you aren't redirected").click
 
-# Go to the page for starred items.
-page = page.link_with(:text => "Starred").click
-
 # Print a PDF of each article.
 page.links_with(:text => "Text").each do |link|
   article_page = link.click
