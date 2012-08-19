@@ -1,5 +1,4 @@
 Instapaper-to-PDF is a simple script that prints PDFs of your Instapaper items.
-By default, it only prints PDFs for starred items.
 
 ### Usage
 Set your username, password, and desired path for saved PDFs in "instapaper\_to\_pdf.rb". Then run:
