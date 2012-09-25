@@ -17,7 +17,7 @@ require 'htmldoc'
 require "./sanitize_filename"
 require "./import_to_devonthink"
 
-# Delete articles from Instapaper
+# Delete articles from Instapaper..
 def delete_articles(page)
   page.links_with(:text => "Delete").each do |link|
     page = link.click
@@ -48,24 +48,24 @@ page = page.link_with(:text => "Click here if you aren't redirected").click
 # Print a PDF of each article.
 page.links_with(:text => "Text").each do |link|
   article_page = link.click
-  file_path = "\"" + pdf_destination + "/#{sanitize_filename(article_page.title)}.pdf\"" 
-  
+  file_path = "\"" + pdf_destination + "/#{sanitize_filename(article_page.title)}.pdf\""
+
   pdf = PDF::HTMLDoc.new
-  
+
   pdf.set_option :outfile, file_path
   pdf.set_option :bodycolor, :white
   pdf.set_option :links, true
 
   pdf << article_page.body
-  
+
   puts "Printing a PDF for \"#{article_page.title}\""
   pdf.generate
-  
-  # Enable importing to DEVONthink here. Syntax: path_to_file, database, folder
+
+  # Enable importing to DEVONthink here. Syntax: path_to_file, database, folder.
   # import_to_devonthink(file_path, "Personal", "Articles")
 end
 
-# Delete from Instapaper
+# Delete from Instapaper.
 # puts "Deleting articles from Instapaper"
 # delete_articles(page)
 
