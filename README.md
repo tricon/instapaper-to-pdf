@@ -1,5 +1,13 @@
 Instapaper-to-PDF is a simple script that prints PDFs of your Instapaper items.
 
+### Requirements
+You will need [HTMLDOC](http://www.htmldoc.org) installed in order to utilize this script.
+
+To install on OS X via [Homebrew](http://mxcl.github.com/homebrew/): `brew install htmldoc`.
+
+Please review the official documentation for installation on other platforms.
+
+
 ### Usage
 Set your username, password, and desired path for saved PDFs in "instapaper\_to\_pdf.rb". Then run:
 
