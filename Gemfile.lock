@@ -4,7 +4,9 @@ GEM
     htmldoc (0.2.3)
     mechanize (1.0.0)
       nokogiri (>= 1.2.1)
-    nokogiri (1.4.4)
+    mini_portile2 (2.4.0)
+    nokogiri (1.10.4)
+      mini_portile2 (~> 2.4.0)
 
 PLATFORMS
   ruby
