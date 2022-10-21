@@ -5,7 +5,7 @@ GEM
     mechanize (1.0.0)
       nokogiri (>= 1.2.1)
     mini_portile2 (2.8.0)
-    nokogiri (1.13.3)
+    nokogiri (1.13.9)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     racc (1.6.0)
